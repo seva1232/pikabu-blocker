@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Pikabu Author Blocker",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab"],
+  "content_scripts": [{
+    "matches": ["*://*.pikabu.ru/*"],
+    "js": ["content.js"]
+  }],
+  "action": {
+    "default_popup": "options.html"
+  },
+  "options_page": "options.html"
+}
